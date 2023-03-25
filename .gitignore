@@ -1,13 +1,16 @@
+# Npm
 **/node_modules/**
 **/dist/**
-
+*-lock.json
 *.lock
 
+# IDE
 **/.idea/**
-
 .DS_Store
 
+# Serverless
 **/.serverless/**
 **/.esbuild/_**
 
-*-lock.json
+# Config
+.env
