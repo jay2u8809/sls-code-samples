@@ -6,3 +6,8 @@
 **/.idea/**
 
 .DS_Store
+
+**/.serverless/**
+**/.esbuild/_**
+
+*-lock.json
