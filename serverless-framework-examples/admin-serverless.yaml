@@ -1,0 +1,30 @@
+service: admin-sls-examples
+
+frameworkVersion: '3'
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  region: ap-northeast-1
+
+package:
+  individually: true
+
+functions:
+  index:
+    handler: dist/app/admin/handler.AdminHandler
+    url: true
+#    events:
+#      - http:
+#          method: ANY
+#          path: '/'
+#      - http:
+#          method: ANY
+#          path: '{proxy+}'
+
+custom:
+  serverless-offline:
+    httpPort: 3100
