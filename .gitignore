@@ -10,7 +10,7 @@
 
 # Serverless
 **/.serverless/**
-**/.esbuild/_**
+**/.esbuild/**
 
 # Config
 .env
